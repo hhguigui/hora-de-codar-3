@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var usuario_1 = parseInt( prompt("Digite um número"))
+        var usuario_2 = parseInt( prompt("Digite um número"))
+
+        var soma = 0
+        var contar = 0
+        for(var n = usuario_1; n <= usuario_2; n++){
+            soma += n
+            contar = n++ 
+        }
+
+        var media = (soma + contar) /2
+
+        alert("A media da aritmética dos números são: " + media)
+        
+    </script>
+</body>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+function contarValores() {
+    var dentro_dos_valore = 0;
+    var fora_dos_valore = 0;
+
+   
+    for (var i = 0; i < 10; i++) {
+        var valor = parseFloat(prompt(`Digite o ${i + 1}º valor:`));
+
+       
+        if (valor >= 24 && valor <= 42) {
+            dentro_dos_valore++;
+        } else {
+            fora_dos_valore++;
+        }
+    }
+
+    
+    alert(`Valores dentro do intervalo (24, 42): ${  dentro_dos_valore}`);
+    alert(`Valores fora do intervalo (24, 42): ${fora_dos_valore}`);
+}
+
+
+contarValores();
+
+    </script>
+</body>
+</html>
